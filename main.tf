@@ -22,3 +22,26 @@ resource "google_storage_bucket" "static" {
    enabled = true
  }
 }
+
+resource "google_compute_instance" "default" {
+  name         = "testing"
+  machine_type = "n1-standard-2"
+  zone         = "asia-southeast2-a"
+
+  tags = ["http-server", "https-server"]
+
+  boot_disk {
+    initialize_params {
+      image = "ubuntu-os-cloud/ubuntu-2204-lts"
+    }
+  }
+
+  network_interface {
+    network = "default"
+
+    access_config {
+      // Ephemeral public IP
+    }
+  }
+
+}
