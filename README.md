@@ -11,3 +11,16 @@
   | image        | Ubuntu-20.24                    | 
   | tags         | ["http-server", "https-server"] |
   | network      | "default"                       |
+
+- **Network** - `testing`
+- **Reserved IP** - `public-ip`
+  | Key          | Value           |
+  | --------     | --------        |
+  | ipv4         | 34.128.127.155  |
+
+- **Firewall** - `testing-firewall`
+  | Key           | Value           |
+  | --------      | --------        |
+  | tcp           | ["22", "8443"]  |
+  | source_ranges | [ "0.0.0.0/0" ]   |
+  | target_tags   | [ "all" ]       |
