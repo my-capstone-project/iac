@@ -1,0 +1,3 @@
+.terraform*
+credential.json
+terraform.tfstate*
