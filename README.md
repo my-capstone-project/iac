@@ -21,6 +21,6 @@
 - **Firewall** - `testing-firewall`
   | Key           | Value                 |
   | --------      | --------              |
-  | tcp           | ["22", "80", "8080", "8000", "8443"]  |
+  | tcp           | ["8000", "8080-8089", "22", "8443"]  |
   | source_ranges | [ "0.0.0.0/0" ]       |
   | target_tags   | [ "all" ]             |
