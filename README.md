@@ -24,3 +24,7 @@
   | tcp           | ["80", "8000", "8080-8089", "22", "8443"]  |
   | source_ranges | [ "0.0.0.0/0" ]       |
   | target_tags   | [ "all" ]             |
+
+## list enables API:
+- Compute Engine API
+- Kubernetes Engine API
